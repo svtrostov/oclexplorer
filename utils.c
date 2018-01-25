@@ -326,8 +326,8 @@ get_key_info(const BIGNUM * private_key){
 
 	n = 0;
 	for(j=0;j<32;j++){
-		info->private_hex[n++] = hex_asc_0(info->private_bin[j]);
 		info->private_hex[n++] = hex_asc_O(info->private_bin[j]);
+		info->private_hex[n++] = hex_asc_0(info->private_bin[j]);
 	}
 	info->private_hex[n] = 0;
 
